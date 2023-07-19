@@ -2,10 +2,6 @@ package com.luankuhlmann.gamelist.dto;
 
 import com.luankuhlmann.gamelist.entities.Game;
 import com.luankuhlmann.gamelist.projections.GameMinProjection;
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 
 public class GameMinDTO {
     private Long id;
@@ -29,7 +25,7 @@ public class GameMinDTO {
     public GameMinDTO(GameMinProjection projection) {
         id = projection.getId();
         title = projection.getTitle();
-        year = projection.getYear();
+        year = projection.getReleaseYear();
         imgUrl = projection.getImgUrl();
         shortDescription = projection.getShortDescription();
     }
