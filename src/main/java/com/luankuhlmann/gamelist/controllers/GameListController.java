@@ -1,9 +1,7 @@
 package com.luankuhlmann.gamelist.controllers;
 
-import com.luankuhlmann.gamelist.dto.GameDTO;
 import com.luankuhlmann.gamelist.dto.GameListDTO;
 import com.luankuhlmann.gamelist.dto.GameMinDTO;
-import com.luankuhlmann.gamelist.entities.Game;
 import com.luankuhlmann.gamelist.services.GameListService;
 import com.luankuhlmann.gamelist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
